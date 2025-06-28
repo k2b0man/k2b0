@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>هيئة الإسعاف المصرية - المكتب الفني فرع المنيا</title>
+    <style>
+        body {
+            direction: rtl;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9f0f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1565c0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin: 30px auto;
+            padding: 30px;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h3, h4 {
+            color: #1565c0;
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #1565c0;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+        }
+
+        table, th, td {
+            border: 1px solid #1565c0;
+        }
+
+        th {
+            background-color: #1565c0;
+            color: #fff;
+            padding: 12px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            background-color: #f9fbfd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>هيئة الإسعاف المصرية</h1>
+        <h2>المكتب الفني - فرع المنيا</h2>
+    </header>
+
+    <section>
+        <h3>الصادر</h3>
+        <form>
+            <label for="exportNumber">رقم الصادر:</label>
+            <input type="text" id="exportNumber" name="exportNumber">
+
+            <label for="exportDate">تاريخ الصادر:</label>
+            <input type="date" id="exportDate" name="exportDate">
+
+            <label for="exportDetails">تفاصيل الصادر:</label>
+            <textarea id="exportDetails" name="exportDetails"></textarea>
+
+            <button type="submit">حفظ الصادر</button>
+        </form>
+
+        <h4>جدول الصادر</h4>
+        <table>
+            <tr>
+                <th>رقم الصادر</th>
+                <th>تاريخ الصادر</th>
+                <th>تفاصيل الصادر</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>2025-06-17</td>
+                <td>خطاب موجه إلى الإدارة العامة</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>2025-06-18</td>
+                <td>مستندات رسمية للمراجعة</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3>الوارد</h3>
+        <form>
+            <label for="importNumber">رقم الوارد:</label>
+            <input type="text" id="importNumber" name="importNumber">
+
+            <label for="importDate">تاريخ الوارد:</label>
+            <input type="date" id="importDate" name="importDate">
+
+            <label for="importDetails">تفاصيل الوارد:</label>
+            <textarea id="importDetails" name="importDetails"></textarea>
+
+            <button type="submit">حفظ الوارد</button>
+        </form>
+
+        <h4>جدول الوارد</h4>
+        <table>
+            <tr>
+                <th>رقم الوارد</th>
+                <th>تاريخ الوارد</th>
+                <th>تفاصيل الوارد</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>2025-06-16</td>
+                <td>رد على خطاب سابق</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>2025-06-17</td>
+                <td>مستندات واردة من الوزارة</td>
+            </tr>
+        </table>
+    </section>
+
+</body>
+</html>
